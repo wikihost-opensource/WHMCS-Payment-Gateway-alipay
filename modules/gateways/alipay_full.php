@@ -14,10 +14,10 @@ function alipay_full_MetaData() {
     );
 }
 
-function alipay_full_config() {
+function alipay_full_config($params) {
     require_once __DIR__ ."/class/alipay_full/config_gen.php";
     $config = new alipayfull_config();
-    return $config->get_configuration();
+    return $config->get_configuration($params);
 }
 
 function alipay_full_link($params)
